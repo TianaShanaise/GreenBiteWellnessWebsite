@@ -1,64 +1,16 @@
-/* for navbar */
-/* .div1 {
-  display: flex;
-  flex-direction: column; 
-  flex-wrap: wrap;
-  align-items: center;
+/* Tablets */
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+    font-size: 1.1rem;
+  }
 }
 
-.nav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-} */
-
-/* for the grid in the about section */
-/* .grid, .about-imagegrid {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.grid-box, .about-image {
-  flex: 1 1 100%;
-} */
-
-/* for images */
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
-
-/* 
-   for Tablet (min-width: 601px)
- */
-/* @media (min-width: 601px) {
-  .div1 {
-    flex-direction: row;
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
     justify-content: space-between;
   }
-
-  .nav-list {
-    flex-direction: row;
-    gap: 12px;
-  }
-
-  .grid, .about-imagegrid {
-    flex-direction: row;
-  }
-
-  .grid-box, .about-image {
-    flex: 1 1 48%;
-  }
-} */
-
-/* 
-   for desktop (min-width: 993px)
-    */
-/* @media (min-width: 993px) {
-  .grid-box, .about-image {
-    flex: 1 1 30%;
-  }
-} */
+}
 
