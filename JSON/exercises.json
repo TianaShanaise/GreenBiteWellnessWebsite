@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Push-ups",
+    "bodypart": "arms",
+    "equipment": "none",
+    "sets": 3,
+    "duration": 30
+  },
+  {
+    "id": 2,
+    "name": "Bicep curls",
+    "bodypart": "arms",
+    "equipment": "dumbbells",
+    "sets": 3,
+    "duration": 40
+  },
+  {
+    "id": 3,
+    "name": "Squats",
+    "bodypart": "legs",
+    "equipment": "none",
+    "sets": 3,
+    "duration": 40
+  },
+  {
+    "id": 4,
+    "name": "Banded Deadlifts",
+    "bodypart": "legs",
+    "equipment": "band",
+    "sets": 3,
+    "duration": 45
+  },
+  {
+    "id": 5,
+    "name": "Burpees",
+    "bodypart": "fullbody",
+    "equipment": "none",
+    "sets": 3,
+    "duration": 30
+  }
+]

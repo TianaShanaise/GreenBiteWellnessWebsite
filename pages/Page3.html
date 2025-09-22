@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie and Nutrition calculator</title>
+    <link rel="stylesheet" href="../styles/style3.css">
+    <link rel="stylesheet" href="../styles/mainstyle.css">
+    <script src="../scripts/script3.js" defer> </script>
+    <script src="../scripts/hamburghermenu.js" defer></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+
+</head>
+<body>
+     <div class="div1"> 
+        <div class="logo"> GreenBite </div>
+        <ul class="nav-list">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="index.html#About"> About </a></li>
+            <li><a href="Page2.html"> Healthy Recipies </a></li>
+            <li><a href="Page3.html"> Nutrition Calculator </a></li>
+            <li><a href="Page4.html"> Workout Generator </a></li>
+            <li><a href="page5.html"> Mindfulness </a></li>
+            <li><a href="Page6.html"> Contact & feedback </a></li>
+        </ul>
+    </div>
+
+    <br><br><br><br>
+    <form class="form" id="form">
+        <h2 class="formheading"> BMR, TDEE Calculator </h2>
+        <br>
+        <div class="column">
+            <div class="leftcolumn">
+                <label for="age"> Age </label>
+                <input type="number" id="age">
+                <br><br>
+            
+                <div class="genderoptions">
+                <label> Gender </label>
+                <br>
+                <label for="male"><input type="radio" name="gender" value="male" id="male"> Male </label>
+                <label for="female"><input type="radio" name="gender" value="female" id="female"> Female </label>
+                </div>
+                <br><br>
+                <label for="activitylevel"> Activity Level </label>
+                <select id="activitylevel">
+                    <option value="" disabled selected> Select activity level </option>
+                    <option value="1.2">Sedentary</option>
+                    <option value="1.375">Lightly Active</option>
+                    <option value="1.55">Moderately Active</option>
+                    <option value="1.725">Very Active</option>
+                    <option value="1.9">Super Active</option>
+                </select> 
+            </div>
+            <div class="rightcolumn">
+                <label for="height"> Height(cm) </label>
+                <input type="number" id="height">
+                <br><br>
+                <label for="weight"> Weight(kg)</label>
+                <input type="number" id="weight">
+            </div>
+        </div>
+
+
+        <br><br>
+        <input type="submit" class="submit" id="submit">
+
+
+        <br><br>
+
+    </form>
+
+     <div class="mainresultbox">
+        <div class="resultbox">
+            <h4> BMR </h4>
+            <span id="bmrCounter">0</span> kcal/day  <!-- without <span> the animated counter won't know where to display -->
+        </div>
+
+        <div class="resultbox">
+            <h4> TDEE </h4>
+            <span id="tdeeCounter">0</span> kcal/day
+        </div>
+
+        <div class="resultbox">
+            <h4> Carbs </h4>
+            <span id="carbsCounter">0</span> g/day
+        </div>
+
+        <div class="resultbox">
+            <h4> Protein </h4>
+            <span id="proteinCounter">0</span> g/day
+        </div>
+
+        <div class="resultbox">
+            <h4> Fat </h4>
+            <span id="fatCounter">0</span> g/day
+        </div>
+    </div>
+
+
+    <br><br><br>
+    <footer class="footer">
+        <div class="div-footer">
+            <div class="newsletter">
+                <h3> Subscribe to our newsletter </h3>
+                <form>
+                    <input type="email" placeholder="Enter your Email" id="email">
+                    <br><br>
+                    <button type="button" id="subscribe"> Subscribe </button>
+                </form>
+            </div>
+
+            <div class="links">
+                <h3> Quick Links </h3>
+                <ul type="none">
+                    <li><a href="index.html#About"> About Us </a>.</li>
+                    <li> Privacy Policy </li>
+                    <li> Terms of Service </li>
+                    <li><a href="Page6.html"> Contact </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright"> &copy; GreenBite Company. All Rights Reserved </p>
+    </footer>
+</body>
+</html>

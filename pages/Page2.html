@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipies</title>
+    <link rel="stylesheet" href="../styles/style2.css">
+    <link rel="stylesheet" href="../styles/mainstyle.css">
+    <script src="../scripts/script2.js" defer> </script>
+    <script src="../scripts/hamburghermenu.js" defer></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+
+</head>
+<body>
+     <div class="div1" id="header"> 
+        <div class="logo"> GreenBite </div>
+        <ul class="nav-list">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="index.html#About"> About </a></li>
+            <li><a href="Page2.html"> Healthy Recipies </a></li>
+            <li><a href="Page3.html"> Nutrition Calculator </a></li>
+            <li><a href="Page4.html"> Workout Generator </a></li>
+            <li><a href="page5.html"> Mindfulness </a></li>
+            <li><a href="Page6.html"> Contact & feedback </a></li>
+        </ul>
+    </div>
+
+    <br><br><br>
+    <div class="select-div">
+        <select id="category-selection"> 
+            <option value="" disabled selected hidden> Search for recipies by category </option>
+            <option value="Breakfast"><a href="#breakfast"> Breakfast </a></option>
+            <option value="Lunch"><a href="#lunch"> Lunch </a></option>
+            <option value="Dinner"><a href="#dinner"> Dinner </a></option>
+            <option value="Snack"><a href="#snack"> Snacks </a></option>
+            <option value="Drink"><a href="#drink"> Drinks </a></option>
+        </select>
+    </div> 
+
+
+    <div class="category">
+        <h3 class="category-heading" id="breakfast"> BREAKFAST RECIPES </h3>
+    
+        <div class="breakfast">
+            <div class="recipe-image"   data-id="b1">
+                <img src="../Images/page2images/breakfastdutch-babypancakes.jpg" alt="pancakes">
+                <p><b> Dutch Baby Pancakes </b></p>
+            </div>
+            <div class="recipe-image"  data-id="b2">
+                <img src="../Images/page2images/breakfasteggfrittatas.jpg" alt="frittatas">
+                <p><b> Egg Frittatas </b></p>
+            </div>
+            <div class="recipe-image"   data-id="b3">
+                <img src="../Images/page2images/breakfastgranola-clusters.jpg" alt="granola">
+                <p><b> Granola Clusters </b></p>
+            </div>
+            <div class="recipe-image"  data-id="b4">
+                <img src="../Images/page2images/breakfastpumpkin-pancakes.jpg" alt="pumpkin">
+                <p><b> Pumpkin Pancakes </b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category"> 
+        <h3 class="category-heading" id="lunch"> LUNCH RECIPES </h3>
+
+        <div class="lunch">
+            <div class="recipe-image"  data-id="l1">
+                <img src="../Images/page2images/lunchchicken-grapes-waldorf-salad-chefdehome-4.jpg" alt="waldorf">
+                <p><b> Chicken Grape Waldorf </b></p>
+            </div>
+            <div class="recipe-image" data-id="l2">
+                <img src="../Images/page2images/lunchmexican-tortellini-salad.jpg" alt="totellini">
+                <p><b> Mexican Tortellini Salad </b></p>
+            </div>
+            <div class="recipe-image"  data-id="l3">
+                <img src="../Images/page2images/lunchpasta-salad-bowl.jpg" alt="pasta">
+                <p><b> Pasta Salad Bowl </b></p>
+            </div>
+            <div class="recipe-image"  data-id="l4">
+                <img src="../Images/page2images/lunchsweet-potato-salad-bowl-fork.jpg" alt="potato">
+                <p><b> Sweet Potato Salad Bowl </b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h3 class="category-heading" id="dinner"> DINNER RECIPES </h3>
+
+        <div class="dinner">
+            <div class="recipe-image"  data-id="d1">
+                <img src="../Images/page2images/dinnerChickpea-And-Chicken-Salad4.jpg" alt="salad">
+                <p><b> Chicken and Chickpea Salad </b></p>
+            </div>
+            <div class="recipe-image"  data-id="d2">
+                <img src="../Images/page2images/dinnereasiest-broiled-salmon-recipe-6.jpg" alt="salmon">
+                <p><b> Broiled Salmon </b></p>
+            </div>
+            <div class="recipe-image"  data-id="d3">
+                <img src="../Images/page2images/dinnerGarlic-Dijon-Chicken.jpg" alt="chicken">
+                <p><b> Dijon Chicken </b></p>
+            </div>
+            <div class="recipe-image"  data-id="d4">
+                <img src="../Images/page2images/dinnerItalian-Lentil-Soup-Leads-06-1.jpg" alt="lentil">
+                <p><b> Italian Lentil Soup </b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h3 class="category-heading" id="snack"> SNACK RECIPES </h3>
+
+        <div class="snack">
+            <div class= "recipe-image"  data-id="s1">
+                <img src="../Images/page2images/snacksbanana_muffins.jpg" alt="muffins">
+                <p><b> Banana Muffins </b></p>
+            </div>
+            <div class="recipe-image"  data-id="s2">
+                <img src="../Images/page2images/snackschickpea_date_and_cashew.jpg" alt="cashew">
+                <p><b> Chickpea, Date and Cashew </b></p>
+            </div>
+            <div class="recipe-image"  data-id="s3">
+                <img src="../Images/page2images/snacksflapjacks.jpg" alt="flapjacks">
+                <p><b> Flapjacks </b></p>
+            </div>
+            <div class="recipe-image"   data-id="s4">
+                <img src="../Images/page2images/snacksricotta_pots.jpg" alt="ricotta">
+                <p><b> Ricotta Pots </b></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h3 class="category-heading" id="drink"> DRINK RECIPES </h3>
+
+        <div class="drink">
+            <div class="recipe-image"  data-id="dr1">
+                <img src="../Images/page2images/drinkberrygood.avif" alt="berry">
+                <p><b> Berry Good Smoothie </b></p>
+            </div>
+            <div class="recipe-image"  data-id="dr2">
+                <img src="../Images/page2images/drinkmangomorning.avif" alt="mango">
+                <p><b> Mango Morning Smoothie </b></p>
+            </div>
+            <div class="recipe-image"  data-id="dr3">
+                <img src="../Images/page2images/drinkavacadoandredberry.avif" alt="avacado">
+                <p><b> Avacado and Berry Smoothie </b></p>
+            </div>
+            <div class="recipe-image"   data-id="dr4">
+                <img src="../Images/page2images/drinkbeettheblues.avif" alt="beet">
+                <p><b> Beet the Blues Smoothie </b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+     <div id="recipemodal" class="modal">
+        <div class="modalcontent">
+            <span class="closebutton">&times;</span>
+            <h2 id="recipetitle"></h2>
+            <h3>Ingredients</h3>
+            <ul id="recipeingredients"></ul>
+            <h3>Instructions</h3>
+            <ol id="recipesteps"></ol>
+            <h3>Nutrition</h3>
+            <table id="recipenutrition" border="1"></table>
+        </div>
+     </div>
+
+     <br><br><br>
+
+
+     <br><br><br>
+     <footer class="footer">
+        <div class="div-footer">
+            <div class="newsletter">
+                <h3> Subscribe to our newsletter </h3>
+                <form>
+                    <input type="email" placeholder="Enter your Email" id="email">
+                    <br><br>
+                    <button type="button" id="subscribe"> Subscribe </button>
+                </form>
+            </div>
+
+            <div class="links">
+                <h3> Quick Links </h3>
+                <ul type="none">
+                    <li><a href="index.html#About"> About Us </a>.</li>
+                    <li> Privacy Policy </li>
+                    <li> Terms of Service </li>
+                    <li><a href="Page6.html"> Contact </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright"> &copy; GreenBite Company. All Rights Reserved </p>
+    </footer>
+
+</body>
+</html>

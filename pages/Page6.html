@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and feedback</title>
+    <link rel="stylesheet" href="../styles/style6.css">
+    <link rel="stylesheet" href="../styles/mainstyle.css">
+    <script src="../scripts/script6.js" defer></script>
+    <script src="../scripts/hamburghermenu.js" defer></script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../favicons/site.webmanifest">
+
+</head>
+<body>
+     <div class="div1"> 
+        <div class="logo"> GreenBite </div>
+        <ul class="nav-list">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="index.html#About"> About </a></li>
+            <li><a href="Page2.html"> Healthy Recipies </a></li>
+            <li><a href="Page3.html"> Nutrition Calculator </a></li>
+            <li><a href="Page4.html"> Workout Generator </a></li>
+            <li><a href="page5.html"> Mindfulness </a></li>
+            <li><a href="Page6.html"> Contact & feedback </a></li>
+        </ul>
+    </div>
+
+    <br><br><br><br>
+    <h2 id="feedbackheading"> We would love your feedback! </h2>
+
+    <br><br><br>
+
+    <div class="feedback">
+    <form id="feedbackform">
+        <div class="row">
+            <div class="formgroup">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+        </div>
+        <div class="formgroup">
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="8" style="width:100%;"></textarea>
+        </div>
+    </form>
+
+    <br>
+    <button id="submitbtn"> Submit Feedback </button>
+</div>
+
+<div id="confirmation"></div>
+
+<br><br>
+
+<div class="mapsection">
+    <h2>Our Location</h2>
+    <div class="mapbox">
+        <iframe  
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086553119411!2d144.96305831567917!3d-37.81410797975173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f2345b%3A0x8f74e7ff4f5f3c!2sGreenBite%20HQ!5e0!3m2!1sen!2sus!4v1695327590000!5m2!1sen!2sus" 
+            allowfullscreen="">
+        </iframe>
+    </div>
+</div>
+ <!-- i frame embeds another webpage or content inside a web page -->
+
+
+<br><br>
+<h2 id="faqheading"> FAQ's</h2>
+<h4 id="faqpara"> Click on a question to find the answer </h4>
+<div class="faqitem">
+  <button class="faqquestion">What are your opening hours?</button>
+  <div class="faqanswer">We are open from 9 AM to 6 PM, Monday to Friday.</div>
+</div>
+
+<div class="faqitem">
+  <button class="faqquestion">Do you offer vegetarian options?</button>
+  <div class="faqanswer">Yes, all our meals include vegetarian options.</div>
+</div>
+
+<br><br><br>
+<footer class="footer">
+        <div class="div-footer">
+            <div class="newsletter">
+                <h3> Subscribe to our newsletter </h3>
+                <form>
+                    <input type="email" placeholder="Enter your Email" id="email">
+                    <br><br>
+                    <button type="button" id="subscribe"> Subscribe </button>
+                </form>
+            </div>
+
+            <div class="links">
+                <h3> Quick Links </h3>
+                <ul type="none">
+                    <li><a href="index.html#About"> About Us </a>.</li>
+                    <li> Privacy Policy </li>
+                    <li> Terms of Service </li>
+                    <li><a href="Page6.html"> Contact </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright"> &copy; GreenBite Company. All Rights Reserved </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+html {
+    scroll-behavior: smooth;   /* so that once the hyperlinked content is clicked, it will scroll down smoothly */
+}
+
+body {
+    /* background-image: url(../Images/homePageImages/bgimage2.jpg); */
+    background-image: url(../Images/homePageImages/background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background: rgba(255,255,255,0.6); 
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.div1 {
+    background-color: rgb(97, 138, 97);
+    display: flex;
+    width: 100% ;
+    height: 65px;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.nav-list {
+    display: flex;
+    gap: 25px;
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.hero {
+    position: relative;
+    background-color: beige;
+    height: 450px;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hero-content {
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.h3 {
+    font-family: Arial, Helvetica, Roboto, Open Sans, Lato;
+    color:rgb(29, 29, 29);
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+.grid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;  /* 1fr will divide the space equally between the two div boxes */
+}
+
+.grid-box {
+    background-color:beige;
+    height: 300px;
+    margin-left: 5px;
+    margin-right: 25px;
+}
+
+#wellbeing-image {
+    overflow: hidden;
+}
+
+#wellbeing-image img {
+    width:100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#health-tip {
+    background-image: url(../Images/homePageImages/health-tipbg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: Arial, Helvetica, Roboto, Open Sans, Lato;
+    font-size: 35px;
+    text-align: center;
+    color: #100f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.about {
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, Roboto, Open Sans, Lato;
+}
+
+.topic {
+    font-size: 40px;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.paragraph {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, Roboto, Open Sans, Lato;
+}
+
+.about-imagegrid {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+}
+
+.about-image {
+    overflow: hidden;
+    /* height: 250px; */
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    /* height: 100%; */
+    height: auto;
+    object-fit: contain;
+}
+
+.about-image p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, Roboto, Open Sans, Lato;
+    margin: 10px 0 0;   /* adds space between the image and text */
+} 
+
+.footer {
+    background-color: rgb(230, 229, 227);
+    text-align: center;
+}
+
+.div-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.newsletter h3, .links h3 {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.alert {
+    background: white;
+    color: black;
+    position: fixed;
+}
