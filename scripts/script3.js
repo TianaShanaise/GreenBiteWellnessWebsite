@@ -80,3 +80,11 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();   //prevents the page from refreshing when the user clicks submit
     calculateCalories();
 })
+
+//registering the service worker
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("service-worker.js")
+    .then(() => console.log(" Service Worker registered"))
+    .catch(err => console.log(" Service worker registration failed:", err));
+}

@@ -72,6 +72,14 @@ function incrementSession() {
     document.getElementById("sessioncount").textContent = sessionCount;
 }
 
+//registering the service worker
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("service-worker.js")
+    .then(() => console.log(" Service Worker registered"))
+    .catch(err => console.log(" Service worker registration failed:", err));
+}
+
 
 
 

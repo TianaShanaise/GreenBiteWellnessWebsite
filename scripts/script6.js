@@ -51,3 +51,10 @@ function Answer(e) {
 
 faqButtons.forEach(btn => btn.addEventListener("click", Answer));
 
+//registering the service worker
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("service-worker.js")
+    .then(() => console.log(" Service Worker registered"))
+    .catch(err => console.log(" Service worker registration failed:", err));
+}
